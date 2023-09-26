@@ -12,6 +12,7 @@
     "@fontsource/poppins": "^5.0.8",
     "@fontsource/raleway": "^5.0.8",
     "@fontsource/roboto": "^5.0.8",
+    "@headlessui/react": "^1.7.17",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",

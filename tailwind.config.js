@@ -17,7 +17,7 @@ module.exports = {
       black: "#000",
       offBlack: "#333333",
       dustBlack: "#404040",
-      blue: "#264B96",
+      blue: "#041F31",
       Blue: "#02133F",
       orange: "#EF7C00",
       deepBlue: "#171930",

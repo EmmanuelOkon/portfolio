@@ -8,3 +8,11 @@
   box-sizing: border-box;
   transition: 200ms ease-out all;
 }
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
