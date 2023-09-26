@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <>
       <Navbar />
-      <div className=" text-center bg-blue px-4 lg:pb-20  lg:px-20">
+      <div className=" text-center bg-blue px-4 lg:pb-20 pt-10  lg:px-20">
         <div className="mx-auto py-5 text-center ">
           <div className="sm:px-1">
             <span className="text-white font-raleway">Frontend Engineer</span>
@@ -14,9 +14,10 @@ const Hero = () => {
               Emmanuel Okon
             </h1>
             <p className="mt-3 max-w-md mx-auto font-raleway text-lg sm:text-xl md:mt-5 md:max-w-3xl text-gradient-to-r from-orange to-blue text[#00F5A0] text-white ">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt.
+              Experienced and results-oriented Frontend Developer, with over 3
+              years of experience. Offering a strong attention to UI detail and
+              accuracy, effective problem-solving skills, and possessing the
+              important ability to work in fast-paced team environments.
             </p>
             <div className="mt-10 sm:flex sm:justify-center ">
               <div className="mt-3 rounded-md shadow sm:mt-0 ">
@@ -30,9 +31,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        
       </div>
-      
     </>
   );
 };

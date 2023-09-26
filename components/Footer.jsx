@@ -32,7 +32,7 @@ const navigation = {
 export default function Footer() {
   return (
     <footer className="bg-blue" aria-labelledby="footer-heading">
-      <div className="mxauto px-4 lg:pb20 lg:py-16 lg:px-20">
+      <div className="mxauto px-4 lg:pb20 py-10 lg:py-16 lg:px-20">
         <div className="font-bold text-center ">
           <ul className="flex items-center justify-center ">
             {navigation.social.map((item) => (
@@ -44,7 +44,7 @@ export default function Footer() {
             ))}
           </ul>
           
-          <p className="flex items-center justify-center text-fadeOrange font-raleway text-lg py-2 pb-6 ">
+          <p className="flex items-center justify-center text-white font-raleway text-lg py-2 pb-6 ">
             <span>© 2023 Emmanuel Okon </span>
           </p>
         </div>

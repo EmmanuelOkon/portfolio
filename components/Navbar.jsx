@@ -120,7 +120,7 @@ export default function Navbar({ pathname = "" }) {
                           isActive
                             ? "text-blue font-extrabold text-lg"
                             : "text-grey hover:border-b-2",
-                          "flex items-center px-2 py-2 text-base font-normal"
+                          "hidden flx items-center px-2 py-2 text-base font-normal"
                         )}
                         aria-current={isActive ? "page" : undefined}
                       >
