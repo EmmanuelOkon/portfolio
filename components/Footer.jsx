@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { AiOutlineGithub } from "react-icons/ai";
 import { FiInstagram } from "react-icons/fi";
-import { BsTwitter } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
 import { BiLogoLinkedinSquare } from "react-icons/bi";
 import { FiMail } from "react-icons/fi";
 import Image from "next/image";
@@ -19,7 +19,7 @@ const navigation = {
       href: "mailto:emmahhokon@gmail.com",
     },
     {
-      icon: BsTwitter,
+      icon: FaXTwitter,
       href: "https://twitter.com/EO_Udo",
     },
     {
@@ -32,7 +32,7 @@ const navigation = {
 export default function Footer() {
   return (
     <footer className="bg-blue" aria-labelledby="footer-heading">
-      <div className="mxauto px-4 lg:pb20 py-10 lg:py-16 lg:px-20">
+      <div className="px-4 lg:pb20 py-10 lg:py-16 lg:px-20">
         <div className="font-bold text-center ">
           <ul className="flex items-center justify-center ">
             {navigation.social.map((item) => (
@@ -44,8 +44,8 @@ export default function Footer() {
             ))}
           </ul>
           
-          <p className="flex items-center justify-center text-white font-raleway text-lg py-2 pb-6 ">
-            <span>© 2023 Emmanuel Okon </span>
+          <p className=" text-white font-poppins text-sm font-light pt-6 py-2 pb-6 ">
+            <span className="tracking-widest">© 2023 Emmanuel Okon </span>
           </p>
         </div>
       </div>

@@ -1,6 +1,30 @@
+"use client"
+
 import React from "react";
 import Navbar from "./Navbar";
 import Link from "next/link";
+import { BiLogoGithub } from "react-icons/bi";
+import { FaXTwitter } from "react-icons/fa6";
+import {FaLinkedin} from "react-icons/fa";
+
+
+const partners = [
+  {
+    name: "Github",
+    icon: BiLogoGithub,
+    href: "https://github.com/EmmanuelOkon",
+  },
+  {
+    name: "Twitter",
+    icon: FaXTwitter,
+    href: "https://twitter.com/EO_Udo",
+  },
+  {
+    name: "LinkedIn",
+    icon: FaLinkedin,
+    href: "https://www.linkedin.com/in/eo-udo/",
+  },
+];
 
 const Hero = () => {
   return (
@@ -19,7 +43,25 @@ const Hero = () => {
               accuracy, effective problem-solving skills, and possessing the
               important ability to work in fast-paced team environments.
             </p>
-            <div className="mt-10 sm:flex sm:justify-center ">
+            <div className="mt-4 md:mt-8 px-8 w-full ">
+              <div className="flex flex-wrap items-center justify-center gap-10 rotateRightToLeft">
+                {partners.map((partner, index) => (
+                  <Link key={index} target="_blank" href={partner.href}>
+                    <div className="bg-orange hover:bg-fadeOrange  text-white hover:text-orange hover:cursor-pointer py-3 px-3 rounded-md flex-wrap flex items-center   ">
+                      <partner.icon
+                        width={50}
+                        height={50}
+                        src={partner.icon}
+
+                        className="w-6 h-6 hover:cursor-pointer"
+                      />
+                      <span className=" font-medium pl-1 ">{partner.name}</span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+            {/* <div className="mt-10 sm:flex sm:justify-center ">
               <div className="mt-3 rounded-md shadow sm:mt-0 ">
                 <Link
                   href="mailto:emmahhokon@gmail.com"
@@ -28,7 +70,7 @@ const Hero = () => {
                   Contact Me
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

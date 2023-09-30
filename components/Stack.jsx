@@ -4,6 +4,7 @@ import redux from "../public/redux.png";
 import react from "../public/react.svg";
 import javascript from "../public/javascript.svg";
 import typescript from "../public/typescript.png";
+import gatsby from "../public/gatsby.svg";
 import Image from "next/image";
 
 const partners = [
@@ -30,6 +31,10 @@ const partners = [
   {
     name: "Styled Components",
     image: styledcomponent,
+  },
+  {
+    name: "Gatsby",
+    image: gatsby,
   },
 ];
 
