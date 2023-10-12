@@ -30,7 +30,7 @@ export default function Projects() {
       name: "Car Rentals App",
       image: "/car-rentals.png",
       stack: [javascript, Next, typescript, Tailwind],
-      href: "https://imdbmovies-clone.vercel.app/?genre=fetchTopRated",
+      href: "https://car-rentalshub.vercel.app/",
     },
     {
       name: "Matriks Hub",
