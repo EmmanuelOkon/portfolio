@@ -23,7 +23,7 @@ export default function Projects() {
     {
       name: "Crown Shops",
       image: "/Crwn.png",
-      stack: [react, Next, styledcomponent, Firebase, redux],
+      stack: [react, styledcomponent, Firebase, redux],
       href: "https://crownshops.netlify.app/",
     },
     {

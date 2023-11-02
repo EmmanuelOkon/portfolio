@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     const delay = setTimeout(() => {
       setIsLoading(false);
       clearTimeout(delay);
-    }, 1000);
+    }, 2000);
   }, []);
 
   return (

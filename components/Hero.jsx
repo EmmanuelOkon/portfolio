@@ -37,22 +37,18 @@ const Hero = () => {
             <h1 className="font-poppins text-4xl lg:tracking-wide font-bold text-orange lg:text-7xl">
               Emmanuel Okon
             </h1>
-            <p className="mt-3 max-w-md mx-auto font-raleway text-lg sm:text-xl md:mt-5 md:max-w-3xl text-gradient-to-r from-orange to-blue text[#00F5A0] text-white ">
-              Experienced and results-oriented Frontend Developer, with over 3
-              years of experience. Offering a strong attention to UI detail and
-              accuracy, effective problem-solving skills, and possessing the
-              important ability to work in fast-paced team environments.
+            <p className="mt-3 max-w-md mx-auto font-raleway text-lg sm:text-xl md:mt-5 md:max-w-3xl text-gradient-to-r from-orange to-blue text[#00F5A0] text-white">
+            I am a Frontend Developer based in Uyo, Nigeria, with over 3 years of experience. I am a results-oriented developer with a strong focus on UI design and precision. I excel in problem-solving and have the essential ability to thrive in fast-paced team environments.
             </p>
             <div className="mt-4 md:mt-8 px-8 w-full ">
               <div className="flex flex-wrap items-center justify-center gap-10 rotateRightToLeft">
                 {partners.map((partner, index) => (
                   <Link key={index} target="_blank" href={partner.href}>
-                    <div className="bg-orange hover:bg-fadeOrange  text-white hover:text-orange hover:cursor-pointer py-3 px-3 rounded-md flex-wrap flex items-center   ">
+                    <div className="bg-orange hover:bg-fadeOrange  text-white hover:text-orange hover:cursor-pointer py-3 px-3 rounded-md flex-wrap flex items-center hover:scale-110  ">
                       <partner.icon
                         width={50}
                         height={50}
                         src={partner.icon}
-
                         className="w-6 h-6 hover:cursor-pointer"
                       />
                       <span className=" font-medium pl-1 ">{partner.name}</span>

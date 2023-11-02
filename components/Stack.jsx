@@ -50,10 +50,10 @@ const Stack = () => {
           </div>
         </div>
         <div className="mt-4 md:mt-8 px-8 w-full ">
-          <div className="flex flex-wrap items-center justify-center gap-10 rotateRightToLeft">
+          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 rotateRightToLeft">
             {partners.map((partner, index) => (
               <div key={index}>
-                <div className="w-[150px] hover:cursor-pointer py-6 flex-wrap flex flex-col justify-cente items-center   ">
+                <div className="w-[100px] md:w-[150px] hover:cursor-pointer py-4 md:py-6 flex-wrap flex flex-col justify-cente items-center">
                   <Image width={50} height={50} src={partner.image} alt={partner.name} className="" />
                   <span className="text-white pt-1">{partner.name}</span>
                 </div>

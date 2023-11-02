@@ -38,7 +38,7 @@ export default function Footer() {
             {navigation.social.map((item) => (
               <Link target="_blank" href={item.href} key={item.name} className="mx-4 lg:mx-10 py-1">
                 {item.icon && (
-                  <item.icon className="w-6 h-6 text-orange hover:cursor-pointer" />
+                  <item.icon className="w-6 h-6 text-orange hover:cursor-pointer hover:scale-110 hover:text-fadeOrange" />
                 )}
               </Link>
             ))}

@@ -69,14 +69,12 @@ export default function Navbar({ pathname = "" }) {
               );
             })}
             <div className="hidden md:flex items-center justify-end">
-              <Link href="mailto:emmahhokon@gmail.com">
-                <button
-                  type="button"
-                  className="flex items-center justify-center text-base font-medium rounded-lg text-white bg-orange hover:bg-fadeOrange hover:text-orange border-2 lg:font-semibold border-orange md:py-2 md:text-lg md:px-4"
-                >
-                  Contact Me
-                </button>
-              </Link>
+              <a
+                href="mailto:emmahhokon@gmail.com"
+                className="flex items-center justify-center text-base font-medium rounded-lg text-white bg-orange hover:bg-fadeOrange hover:text-orange border-2 lg:font-semibold border-orange md:py-2 md:text-lg md:px-4 hover:scale-110"
+              >
+                Contact Me
+              </a>
             </div>
           </Popover.Group>
         </div>
@@ -132,14 +130,12 @@ export default function Navbar({ pathname = "" }) {
               </div>
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <Link href="/contact">
-                    <button
-                      type="button"
-                      className="flex items-center justify-center text-lg font-medium rounded-md text-white bg-orange hover:bg-fadeOrange hover:text-orange border-2 lg:font-semibold border-orange py-2  px-4"
-                    >
-                      Contact Me
-                    </button>
-                  </Link>
+                  <a
+                    className="flex items-center justify-center text-lg font-medium rounded-md text-white bg-orange hover:bg-fadeOrange hover:text-orange border-2 lg:font-semibold border-orange py-2  px-4"
+                    href="mailto:emmahhokon@gmail.com"
+                  >
+                    Contact Me
+                  </a>
                 </div>
               </div>
             </div>
