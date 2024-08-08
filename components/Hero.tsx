@@ -1,10 +1,11 @@
 // "use client";
 
 // import * as React from "react";
-import { MagicButton } from "./ui/MagicButton";
+import MagicButton, { RightArrow } from "./ui/MagicButton";
 import { ShootingStars } from "./ui/shooting-stars";
 import { StarsBackground } from "./ui/stars-background";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { FaLocationArrow } from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -28,13 +29,13 @@ const Hero = () => {
         <StarsBackground className="h-screen w-screen" />
         {/* Radial gradient for the container to give a faded look */}
         <div
-          // chnage the bg to bg-black-100, so it matches the bg color and will blend in
+          // change the bg to bg-black-100, so it matches the bg color and will blend in
           className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
+      <div className="flex justify-center relative z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Dynamic Web Magic with Next.js
@@ -49,7 +50,12 @@ const Hero = () => {
             Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
           </p>
 
-          <MagicButton />
+          <MagicButton
+            title="See my work"
+            // icon={<RightArrow />}
+            icon={<FaLocationArrow />}
+            position="right"
+          />
         </div>
       </div>
     </div>

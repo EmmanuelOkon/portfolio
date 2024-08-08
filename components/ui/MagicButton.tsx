@@ -5,22 +5,38 @@ import { HoverBorderGradient } from "./hover-border-gradient";
 
 type IconProps = React.HTMLAttributes<SVGElement>;
 
-export function MagicButton() {
+const MagicButton = ({
+  title,
+  icon,
+  position,
+  handleClick,
+  otherClasses,
+}: {
+  title: string;
+  icon: React.ReactNode;
+  position: string;
+  handleClick?: () => void;
+  otherClasses?: string;
+}) => {
   return (
     <div className="flex justify-center text-center">
       <HoverBorderGradient
         containerClassName="rounded-lg p-[1px]"
         as="button"
-        className="dark:bg-black-100 dark:hover:bg-black-100 bg-white text-black dark:text-white flex items-center space-x-2 dark:hover:text-purple"
+        className={`dark:bg-black-100 dark:hover:bg-black-100 bg-white text-black dark:text-white flex items-center space-x-2 dark:hover:text-purple gap-2 ${otherClasses} `}
+        onClick={handleClick}
       >
-        <span>See my work</span>
-        <RightArrow />
+        {position === "left" && icon}
+        {title}
+        {position === "right" && icon}
       </HoverBorderGradient>
     </div>
   );
-}
+};
 
-const RightArrow = (props: IconProps) => {
+export default MagicButton;
+
+export const RightArrow = (props: IconProps) => {
   return (
     <svg
       width="13"
