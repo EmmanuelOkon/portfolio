@@ -1,9 +1,9 @@
 // "use client";
 
 // import * as React from "react";
-import MagicButton, { RightArrow } from "./ui/MagicButton";
-import { ShootingStars } from "./ui/shooting-stars";
-import { StarsBackground } from "./ui/stars-background";
+import MagicButton, { RightArrow } from "./MagicButton";
+import { ShootingStars } from "./ui/ShootingStars";
+import { StarsBackground } from "./ui/StarsBackground";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { FaLocationArrow } from "react-icons/fa6";
 
@@ -16,8 +16,8 @@ const Hero = () => {
        *  0.2 to 0.03
        */}
       <div
-        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.01] bg-grid-black-100/[0.2]
-       absolute top-0 left-0 flex items-center justify-center"
+        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.01] bg-grid-black-100/[0.04]
+       absolute top-0 left-0 flex items-center justify-center grid-border-4"
       >
         {/**
          *  UI: shooting-stars-and-stars-background
@@ -35,16 +35,16 @@ const Hero = () => {
 
       <div className="flex justify-center relative z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className=" title tracking-widest text-xs md:text-sm text-center text-blue-100 max-w-80">
+          <p className="title text-black-100 tracking-widest text-xs md:text-sm text-center dark:text-blue-100 max-w-80 font-medium ">
             Dynamic Frontend Maestro
           </p>
 
           <TextGenerateEffect
             words="Hi there, I'm Emmanuel&nbsp;Okon"
-            className="text-center px-2 text-[35px] md:text-[48px] md:text5xl lg:text-[60px] lg:text-6xl title leadingtight bgred-800 "
+            className="text-center px-2 text-[35px] md:text-[48px] lg:text-[60px] lg:text-6xl title"
           />
 
-          <p className="text-center max-w-[60%] md:tracking-wider mb-4 text-lg md:text-xl lg:text-2xl body">
+          <p className="text-center max-w-[60%] md:tracking-wider mb-4 text-lg md:text-xl lg:text-2xl font-medium body">
             Pushing the Boundaries of Interactive Design
           </p>
 
@@ -53,7 +53,7 @@ const Hero = () => {
             // icon={<RightArrow />}
             icon={<FaLocationArrow />}
             position="right"
-            otherClasses="title"
+            otherClasses="title hover:bg-purple  "
           />
         </div>
       </div>
