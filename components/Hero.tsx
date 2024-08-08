@@ -10,8 +10,6 @@ import { FaLocationArrow } from "react-icons/fa6";
 const Hero = () => {
   return (
     <div className="pb-20 pt-36">
-      <div></div>
-
       {/**
        *  UI: grid
        *  change bg color to bg-black-100 and reduce grid color from
@@ -37,17 +35,17 @@ const Hero = () => {
 
       <div className="flex justify-center relative z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
+          <p className=" title tracking-widest text-xs md:text-sm text-center text-blue-100 max-w-80">
+            Dynamic Frontend Maestro
           </p>
 
           <TextGenerateEffect
-            words="Hi there, I am Emmanuel&nbsp;Okon"
-            className="text-center px-2  text-[35px] md:text-5xl lg:text-6xl"
+            words="Hi there, I'm Emmanuel&nbsp;Okon"
+            className="text-center px-2 text-[35px] md:text-[48px] md:text5xl lg:text-[60px] lg:text-6xl title leadingtight bgred-800 "
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
+          <p className="text-center max-w-[60%] md:tracking-wider mb-4 text-lg md:text-xl lg:text-2xl body">
+            Pushing the Boundaries of Interactive Design
           </p>
 
           <MagicButton
@@ -55,6 +53,7 @@ const Hero = () => {
             // icon={<RightArrow />}
             icon={<FaLocationArrow />}
             position="right"
+            otherClasses="title"
           />
         </div>
       </div>
