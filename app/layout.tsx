@@ -5,6 +5,8 @@ import { ThemeProvider } from "./provider";
 import "@fontsource/alegreya-sans";
 import '@fontsource-variable/dm-sans';
 
+import '@fontsource-variable/raleway';
+
 
 export const metadata: Metadata = {
   title: "Emmanuel Okon",
