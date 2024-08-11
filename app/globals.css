@@ -122,6 +122,10 @@ body::-webkit-scrollbar {
   font-family: 'Alegreya Sans', sans-serif;
 }
 
+.bodyTwo {
+  font-family: 'Raleway Variable', sans-serif;
+}
+
 @layer utilities {
   .heading {
     @apply font-bold text-4xl md:text-5xl text-center;
@@ -130,4 +134,9 @@ body::-webkit-scrollbar {
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
+}
+
+.card {
+  background: rgb(4, 7, 19);
+  background-color: linear-gradient(90deg, rgba(4, 7, 29, 1) 0%, rgba(12, 14, 35, 1) 100%),
 }
