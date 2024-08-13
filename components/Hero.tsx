@@ -16,7 +16,7 @@ const Hero = () => {
        *  0.2 to 0.03
        */}
       <div
-        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.01] bg-grid-black-100/[0.04]
+        className="h-screen w-full dark:bg-teal-100 bg-white dark:bg-grid-white/[0.01] bg-grid-black-100/[0.04]
        absolute top-0 left-0 flex items-center justify-center grid-border-4"
       >
         {/**
@@ -28,8 +28,8 @@ const Hero = () => {
         {/* Radial gradient for the container to give a faded look */}
         <div
           // change the bg to bg-black-100, so it matches the bg color and will blend in
-          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
-         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-teal-100
+         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,teal)]"
         />
       </div>
 
@@ -40,7 +40,7 @@ const Hero = () => {
           </p>
 
           <TextGenerateEffect
-            words="Hi there, I'm Emmanuel&nbsp;Okon"
+            words="Hi there, I am Emmanuel&nbsp;Okon"
             className="text-center px-2 text-[35px] md:text-[48px] lg:text-[60px] lg:text-6xl title"
           />
 
@@ -53,7 +53,7 @@ const Hero = () => {
             // icon={<RightArrow />}
             icon={<FaLocationArrow />}
             position="right"
-            otherClasses="title hover:bg-purple  "
+            otherClasses="title hover:bg-teal  "
           />
         </div>
       </div>

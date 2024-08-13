@@ -7,6 +7,8 @@ import '@fontsource-variable/dm-sans';
 
 import '@fontsource-variable/raleway';
 
+import { Toaster } from "@/components/ui/sonner";
+
 
 export const metadata: Metadata = {
   title: "Emmanuel Okon",
@@ -20,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body >
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -29,6 +31,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <Toaster richColors />
       </body>
     </html>
   );

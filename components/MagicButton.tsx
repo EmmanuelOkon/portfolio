@@ -21,9 +21,9 @@ const MagicButton = ({
   return (
     <div className="flex justify-center text-center">
       <HoverBorderGradient
-        containerClassName="rounded-lg p-[1px]"
+        containerClassName="rounded-md p-[1px]"
         as="button"
-        className={`dark:bg-black-100 dark:hover:bg-black-100 bg-white font-medium text-black dark:text-white flex items-center space-x-2 dark:hover:text-purple gap-2 ${otherClasses} `}
+        className={`bg-teal-100 dark:hover:bg-teal-800 transition-all duration-200 ease-in-out dark:bg-teal font-medium text-white flex items-center space-x-2 gap-2 ${otherClasses} `}
         onClick={handleClick}
       >
         {position === "left" && icon}

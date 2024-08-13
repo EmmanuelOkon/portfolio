@@ -4,11 +4,12 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/static";
 import { PinContainer } from "./ui/Pin";
+import Link from "next/link";
 
 const RecentProjects = () => {
   return (
     <div className="py-20">
-      <h1 className="heading title ">
+      <h1 className="heading title max-w-md mx-auto ">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
@@ -19,13 +20,13 @@ const RecentProjects = () => {
             key={item.id}
           >
             <PinContainer
-              title="/ui.aceternity.com"
+              title={item.link}
               href="https://twitter.com/mannupaaji"
             >
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
+                  className="relative w-full h-full overflow-hidden lg:rounded-3xl dark:bg-teal bg-teal-100"
+                  // style={{ backgroundColor: "#13162D" }}
                 >
                   <img src="/bg.png" alt="bgimg" />
                 </div>
@@ -65,11 +66,15 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                <div className="flex justify-center items-center text-teal-100 hover:text-teal dark:text-teal dark:hover:text-teal-800 ">
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    className="flex lg:text-xl md:text-xs text-sm body"
+                  >
                     Check Live Site
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  </Link>
+                  <FaLocationArrow className="ms-3" />
                 </div>
               </div>
             </PinContainer>

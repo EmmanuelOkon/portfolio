@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import Marquee from "@/components/magicui/marquee";
 import { Icons } from "@/public/stack/icons";
-import Image from "next/image";
+
 
 const reviews = [
   {
@@ -42,9 +42,9 @@ const reviews = [
   },
   {
     id: 7,
-    name: "Styled Components",
+    name: "Github",
 
-    icon: Icons.airtable,
+    icon: Icons.github,
   },
   {
     id: 8,
@@ -61,23 +61,44 @@ const reviews = [
   {
     id: 10,
     name: "Stripe",
-    icon: Icons.airtable,
+    icon: Icons.stripe,
   },
   {
     id: 11,
     name: "React Query",
-
-    icon: Icons.airtable,
+    icon: Icons.reactQuery,
   },
   {
     id: 12,
     name: "Git",
     icon: Icons.git,
   },
+  {
+    id: 13,
+    name: "Netlify",
+    icon: Icons.netlify,
+  },
+  {
+    id: 14,
+    name: "Framer Motion",
+    icon: Icons.framer,
+  },
+  {
+    id: 15,
+    name: "Nx Dev",
+    icon: Icons.nxdev,
+  },
+  {
+    id: 16,
+    name: "Postman",
+    icon: Icons.postman,
+  },
 ];
 
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
+
+// export interface 
 
 const ReviewCard = ({
   id,
@@ -91,7 +112,7 @@ const ReviewCard = ({
   return (
     <figure
       className={cn(
-        "relative h-fit 40 w-36 cursor-pointer overflow-hidden rounded-xl border p-4",
+        "relative h-fit 40 w-36 cursor-pointer overflow-hidden rounded-lg border p-2",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
@@ -100,7 +121,9 @@ const ReviewCard = ({
     >
       <div key={id} className="flex flex-row items-center gap-2">
         {IconComponent && (
-          <IconComponent className="bg-white rounded-md w-8 h-8" />
+          <div className="">
+            <IconComponent className="bg-white/10 rounded-md w-8 h-8" />
+          </div>
         )}
 
         <div className="flex flex-col">

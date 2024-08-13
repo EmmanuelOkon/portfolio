@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
   items,
-  direction = "left",
+  direction = "right",
   speed = "fast",
   pauseOnHover = true,
   className,
@@ -45,7 +45,7 @@ export const InfiniteMovingCards = ({
   }
   const getDirection = () => {
     if (containerRef.current) {
-      if (direction === "left") {
+      if (direction === "right") {
         containerRef.current.style.setProperty(
           "--animation-direction",
           "forwards"
@@ -74,7 +74,7 @@ export const InfiniteMovingCards = ({
       ref={containerRef}
       className={cn(
         // max-w-7xl to w-screen
-        "scroller relative z-20 w-screen overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20 w-screen overflowhidden mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}
     >
@@ -82,7 +82,7 @@ export const InfiniteMovingCards = ({
         ref={scrollerRef}
         className={cn(
           // change gap-16
-          " flex min-w-full shrink-0 gap-16 py-4 w-max flex-nowrap",
+          " flex min-w-full shrink-0 gap-16 py-4 w-max flex-nowrap h-h-full ",
           start && "animate-scroll ",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
@@ -91,20 +91,20 @@ export const InfiniteMovingCards = ({
           <li
             //   change md:w-[450px] to md:w-[60vw] , px-8 py-6 to p-16, border-slate-700 to border-slate-800
             className="w-[90vw] max-w-full relative rounded-2xl border border-b-0
-             flex-shrink-0 border-slate-800 p-5 md:p-16 md:w-[60vw]"
-            style={{
-              //   background:
-              //     "linear-gradient(180deg, var(--slate-800), var(--slate-900)", //remove this one
-              //   add these two
-              //   you can generate the color from here https://cssgradient.io/
-              background: "rgb(4,7,29)",
-              backgroundColor:
-                "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-            }}
+             flex-shrink-0 border-slate-800 p-5 md:p16 md:w-[60vw] h-full bg-teal"
+            // style={{
+            //   //   background:
+            //   //     "linear-gradient(180deg, var(--slate-800), var(--slate-900)", //remove this one
+            //   //   add these two
+            //   //   you can generate the color from here https://cssgradient.io/
+            //   background: "rgb(4,7,29)",
+            //   backgroundColor:
+            //     "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+            // }}
             // change to idx cuz we have the same name
             key={idx}
           >
-            <blockquote>
+            <blockquote className="h-full bg-red500 ">
               <div
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"

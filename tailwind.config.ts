@@ -33,6 +33,16 @@ const config = {
           200: "rgba(17, 25, 40, 0.75)",
           300: "rgba(255, 255, 255, 0.125)",
         },
+        teal: {
+          DEFAULT: "#00A896",
+          100: "#001914",
+        },
+        emerald: {
+          DEFAULT: "#02C39A",
+        },
+        yellow: {
+          DEFAULT: "#F0F3BD",
+        },
         white: {
           DEFAULT: "#FFF",
           100: "#BEC1DD",

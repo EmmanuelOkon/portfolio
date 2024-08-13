@@ -4,7 +4,6 @@ import { gridItems } from "@/static";
 export const Grid = () => {
   return (
     <section id="about">
-      {/* <BentoGrid className="max-w[1200px] mt-24 md:mt-32 xl:mt-40 mx-auto md:auto-rows[20rem] hidde"> */}
       <BentoGrid className="w-full py-20">
         {gridItems.map(
           ({

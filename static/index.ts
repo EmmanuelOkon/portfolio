@@ -1,5 +1,7 @@
+import { Icons } from "@/public/stack/icons";
+
 export const navItems = [
-  { name: "About", link: "#about" },
+  { name: "About", link: "#about", icon: Icons.about },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
@@ -12,14 +14,15 @@ export const gridItems = [
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
+    titleClassName: "justify-end text-white bodyTwo",
     img: "/b1.svg",
     spareImg: "",
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "Our different time zones won't be a problem",
+    title: "I am very flexible with time zone communications",
+    description: "",
+    // description: "Our different time zones won't be a problem",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     // titleClassName: "justify-start",
@@ -77,7 +80,7 @@ export const projects = [
     des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    link: "https://evently-web-alpha.vercel.app/",
   },
   {
     id: 2,
@@ -85,7 +88,7 @@ export const projects = [
     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "https://voom-call-app.vercel.app/",
   },
   {
     id: 3,
@@ -93,7 +96,7 @@ export const projects = [
     des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    link: "https://afrifoods.vercel.app/",
   },
   {
     id: 4,
@@ -108,31 +111,25 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Our frontend engineer transformed our outdated website into a modern, responsive masterpiece. The user experience is now seamless across all devices, and our conversion rates have skyrocketed.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Working with this Emmanuel Okon was a game-changer for our web app. He implemented complex features with ease, significantly improving performance and reducing load times.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "We were impressed by how quickly our frontend engineer adapted to our tech stack and delivered high-quality code. Their expertise in React and Redux took our project to the next level.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Emmanuel Okon's proficiency in TypeScript and his commitment to writing clean, maintainable code has made our codebase a joy to work with. Future updates and scaling will be much easier.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
