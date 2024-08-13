@@ -111,25 +111,25 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Our frontend engineer transformed our outdated website into a modern, responsive masterpiece. The user experience is now seamless across all devices, and our conversion rates have skyrocketed.",
+      "Emmanuel transformed our outdated website into a modern, responsive masterpiece. The user experience is now seamless across all devices, and our conversion rates have skyrocketed.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Working with this Emmanuel Okon was a game-changer for our web app. He implemented complex features with ease, significantly improving performance and reducing load times.",
+      "Working with this Emmanuel was a game-changer for our web app. He implemented complex features with ease, significantly improving performance and reducing load times.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "We were impressed by how quickly our frontend engineer adapted to our tech stack and delivered high-quality code. Their expertise in React and Redux took our project to the next level.",
+      "We were impressed by how quickly Emmanuel adapted to our tech stack and delivered high-quality code. Their expertise in React and Redux took our project to the next level.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Emmanuel Okon's proficiency in TypeScript and his commitment to writing clean, maintainable code has made our codebase a joy to work with. Future updates and scaling will be much easier.",
+      "Emmanuel's proficiency in TypeScript and his commitment to writing clean, maintainable code has made our codebase a joy to work with. Future updates and scaling will be much easier.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
