@@ -122,7 +122,7 @@ const ReviewCard = ({
       <div key={id} className="flex flex-row items-center gap-2">
         {IconComponent && (
           <div className="">
-            <IconComponent className="bg-white/10 rounded-md w-8 h-8" />
+            <IconComponent className="bg-white/70 rounded-md w-8 h-8" />
           </div>
         )}
 
