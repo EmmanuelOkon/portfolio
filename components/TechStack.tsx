@@ -126,8 +126,8 @@ const ReviewCard = ({
           </div>
         )}
 
-        <div className="flex flex-col">
-          <figcaption className="text-sm font-medium dark:text-white">
+        <div className="flex flex-col title ">
+          <figcaption className="text-sm font-medium text-white">
             {name}
           </figcaption>
         </div>

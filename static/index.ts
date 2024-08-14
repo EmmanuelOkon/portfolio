@@ -3,7 +3,8 @@ import { Icons } from "@/public/stack/icons";
 export const navItems = [
   { name: "About", link: "#about", icon: Icons.about },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  // { name: "Testimonials", link: "#testimonials" },
+  { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -22,7 +23,7 @@ export const gridItems = [
   {
     id: 2,
     title: "Let me build your dreams while you go to sleep",
-    description: "No matter the time zone,",
+    description: "I work across time zones",
     // description: "Our different time zones won't be a problem",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",

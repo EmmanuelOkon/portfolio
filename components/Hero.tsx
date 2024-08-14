@@ -1,6 +1,7 @@
 // "use client";
 
 // import * as React from "react";
+import Link from "next/link";
 import MagicButton, { RightArrow } from "./MagicButton";
 import { ShootingStars } from "./ui/ShootingStars";
 import { StarsBackground } from "./ui/StarsBackground";
@@ -48,13 +49,14 @@ const Hero = () => {
             Pushing the Boundaries of Interactive Design
           </p>
 
-          <MagicButton
-            title="See my work"
-            // icon={<RightArrow />}
-            icon={<FaLocationArrow />}
-            position="right"
-            otherClasses="title hover:bg-teal  "
-          />
+          <Link href="#projects">
+            <MagicButton
+              title="See my work"
+              icon={<FaLocationArrow />}
+              position="right"
+              otherClasses="title hover:bg-teal  "
+            />
+          </Link>
         </div>
       </div>
     </div>

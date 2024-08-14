@@ -2,6 +2,7 @@
 
 import React from "react";
 import { HoverBorderGradient } from "./ui/HoverBorderGradient";
+import { navItems } from "@/static";
 
 type IconProps = React.HTMLAttributes<SVGElement>;
 

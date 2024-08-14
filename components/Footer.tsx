@@ -35,7 +35,7 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+      <div className="flex mt-16 md:flex-row flex-col justify-between items-center body ">
         <p className="md:text-base text-sm md:font-normal font-light">
           Copyright © {year} Emmanuel Okon
         </p>

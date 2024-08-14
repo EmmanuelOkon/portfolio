@@ -86,7 +86,7 @@ export const BentoGridItem = ({
       // }}
     >
       {/* add img divs */}
-      <div className={`${id === 6 && "flex justify-center"} h-full bg-teal bodyTwo `}>
+      <div className={`${id === 6 && "flex justify-center"} h-full bg-teal-100 bodyTwo `}>
         <div className="w-full h-full absolute">
           {img && (
             <img
@@ -124,13 +124,13 @@ export const BentoGridItem = ({
           )}
         >
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-          <div className="title font-normal md:max-w-32 md:text-xs lg:text-base text-sm text-teal-100 z-10">
+          <div className="title font-normal md:max-w-32 lg:text-base text-sm text-teal z-10  ">
             {description}
           </div>
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
           {/* remove mb-2 mt-2 */}
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+            className={`title text-white text-lg lg:text-3xl max-w-96 font-bold z-10`}
           >
             {title}
           </div>
