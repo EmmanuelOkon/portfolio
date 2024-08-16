@@ -21,7 +21,7 @@ const Footer = () => {
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw] dark:text-white  text-teal-100 title ">
           Still not satisfied with what&nbsp;
-          <span className="dark:textteal dark:text-teal">you</span>&nbsp;see
+          <span className="text-teal dark:text-teal">you</span>&nbsp;see
           here?
         </h1>
         <p className="dark:text-white text-teal-100 body tracking-wider md:mt-10 my-5 text-center">
