@@ -73,7 +73,7 @@ export const FloatingNavbar = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative dark:text-white dark:hover:text-white body items-center flex space-x-1 text-teal-100 hover:text-teal-100 hover:bg-teal rounded-sm p-2 "
+              "relative text-teal-100 dark:text-white hover:text-white body items-center flex space-x-1 hover:bg-teal rounded-sm p-2 "
             )}
           >
             <span className="text-sm md:text-[16px] dark:font-medium font-semibold !cursor-pointer  ">

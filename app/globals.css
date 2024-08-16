@@ -66,6 +66,17 @@
   }
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* ovef */
+}
+
+/* ::selection {
+  color: #000319;
+} */
+
 
 /* Customized Scrollbar */
 ::-webkit-scrollbar {
@@ -111,6 +122,10 @@ body::-webkit-scrollbar {
 
   button {
     @apply active:outline-none;
+  }
+
+  ::selection {
+    @apply dark:text-red-800 text-green-800;
   }
 }
 

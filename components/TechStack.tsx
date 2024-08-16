@@ -116,7 +116,7 @@ const ReviewCard = ({
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
-        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
+        "border-gray-50/[.1] bg-gray-50/[.10] hover:bg-gray-50/[.15]"
       )}
     >
       <div key={id} className="flex flex-row items-center gap-2">
